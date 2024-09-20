@@ -1,1 +1,291 @@
-<p>Hello world</p>
+<html>
+<head>
+    <title>Intro to spikeinterface</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(div_name) {
+          var x = document.getElementById(div_name);
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+
+</head>
+<body class="">
+
+<div class="bg-gray-400">
+<div class="md:text-7xl text-5xl text-center text-white pb-2 font-bold">Intro to SpikeInterface</div>
+</div>
+
+<div class="w-auto m-auto text-center italic">
+    <p>An introduction course for spikeinterface, aimed at users just getting started. Full <a href="">YouTube playlist</a></p>
+</div>
+
+<div class="grid grid-cols-2 pb-2">
+    <div class="text-center mx-4">
+        <button onclick="myFunction('core')" class="text-center font-bold" >Core &#9432</button>
+        <div id="core" style="display:none;">
+            <p>If you watch these videos, you'll be able to make a simple spike sorting pipeline. The only prerequisit is that you have Python installed on your system. To do that, <a href="https://www.python.org/about/gettingstarted/">start here</a>.</p>
+        </div>
+    </div>
+    <div class="text-center mx-4">
+        <button onclick="myFunction('extra')" class="text-center font-bold" >Extras &#9432</button>
+        <div id="extra" style="display:none;">
+            <p>Some more advanced/specialist videos once you're happy with the core material. E.g. if you're comfortable with core lessons 1, 2, 3 you'll be able to tackle extra video 3A.</p>
+        </div>
+    </div>
+</div>
+
+<div class="grid md:grid-cols-2 flex mx-2">
+
+    <div class="mb-2 group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">1</div>
+        
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Install Spikeinterface</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul id="1plan" class="list-disc pl-6">
+            <li>Install spikeinterace in a virtual enviroment</li>
+            <li>Look around the spikeinterface github page</li>
+            <li>Play with JupyterLab</li>
+        </ul>
+
+        <button onclick="myFunction('1resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="1resources" style="display:none;">
+            <ul id="1plan" class="list-disc pl-6">
+                <li><a>Jupyter notebook</a> used in the video</li>
+                <li><a class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" href="https://docs.python.org/3/library/venv.html">Docs about virtual enviroments</a></li>
+                <li><a href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">Conda docs</a>, if you'd prefer to use conda.</li>
+                <li><a href="https://github.com/SpikeInterface/spikeinterface">Spikeinterface github page</a></li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/stable/">Spikeinterface documentation</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L1.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+      
+      <div class="row-span-3"></div>
+      <div class="mb-2 group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">2</div>
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Read in data; check probe</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul id="1plan" class="list-disc pl-6">
+            <li>Read a raw data file</li>
+            <li>Investigate and visualise probes</li>
+            <li>Attach a probe to a recording</li>
+        </ul>
+
+        <button onclick="myFunction('2resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="2resources" style="display:none;">
+            <ul class="list-disc pl-6">
+                <li><a>Jupyter notebook</a> used in the video</li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/latest/modules/extractors.html#raw-data-formats">Recording fomats supported in spikeinterface</a></li>
+                <li><a href="https://dandiarchive.org/dandiset ">DANDI datasets</a></li>
+                <li><a href="https://github.com/SpikeInterface/probeinterface">ProbeInterface</a></li>
+                <li><a href="https://github.com/SpikeInterface/probeinterface_library">ProbeInterface library</a></li>
+                <li><a href="https://github.com/SpikeInterface/SpikeInterface-Training-Edinburgh-May24/tree/main/hands_on/probe_handling">Advanced probe tutorial</a> and <a href=" https://youtu.be/pHze_8s4Qak?si=eqb4QpwYbo_YRbr3&t=1062">YouTube video</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L2.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+
+
+      <div class="mb-2 flex w-96 md:w-auto md:mx-2 md:row-span-2 md:place-self-auto place-self-end mr-2 grid grid-rows-3 ">
+        
+        <div class="flex border-2 rounded-lg border-gray-300 w-full mb-2">
+            <div class="w-20 flex-none text-3xl text-white text-center bg-gray-300">2A</div>
+            <div class="text-xl font-bold pl-2">Manual Curation &#x2193</div>
+        </div>
+        <div class="flex border-2 rounded-lg border-gray-300 w-full mb-2">
+            <div class="w-20 flex-none text-3xl text-white text-center bg-gray-300">2B</div>
+            <div class="text-xl font-bold pl-2">Automated Curation &#x2193</div>
+        </div>
+        <div class="flex border-2 rounded-lg border-gray-300 w-full ">
+            <div class="w-20 flex-none text-3xl text-white text-center bg-gray-300">2C</div>
+            <div class="text-xl font-bold pl-2">Comparison Curation &#x2193</div>
+        </div>
+        
+
+      </div>
+
+      <div class="mb-2  group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">3</div>
+        
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Preprocessing</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul id="1plan" class="list-disc pl-6">
+            <li>Apply preprocessing steps</li>
+            <li>Visualise what we've done</li>
+            <li>Save our processed data, using different formats and parallel processing</li>
+        </ul>
+
+        <button onclick="myFunction('3resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="3resources" style="display:none;">
+            <ul id="1plan" class="list-disc pl-6">
+                <li><a>Jupyter notebook</a> used in the video</li>
+                <li><a href="https://docs.python.org/3/library/venv.html">Docs about virtual enviroments</a></li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/latest/api.html#module-spikeinterface.preprocessing">List of preprocessing steps in spikeinterface</a></li>
+                <li><a href="https://github.com/SpikeInterface/SpikeInterface-Training-Edinburgh-May24/tree/main/hands_on/cookbooks">Advanced tutorial</a>, including information about parallel processing and how spikeinterface stores information, and its <a href="https://youtu.be/pHze_8s4Qak?si=Qkntrs0TVbnliJ6A">YouTube video</a>.</li>
+                <li><a href="https://github.com/SpikeInterface/SpikeInterface-Training-Edinburgh-May24/tree/main/hands_on/handling_drift">Advanced tutorial about drift/motion correction</a> and its <a href="https://youtu.be/pHze_8s4Qak?si=pwuqItRm9cYRaRvu&t=2854">YouTube video</a>.</li>
+                <li><a href="https://github.com/SpikeInterface/SpikeInterface-Training-Edinburgh-May24/tree/main/hands_on/preprocessing">Advanced tutorial on preprocessing, focused on Neuropixels recordings</a>, and its <a href="https://youtu.be/pHze_8s4Qak?si=JkxgSuJJ2bhMV1-J&t=2010">YouTube video</a>.</li>
+                <li><a href="https://youtu.be/Uvn0a5DL7K0?si=YGtgrWbkvKNxqM3Q">Talk about the International Brain Lab's pipeline (including lots of preprocessing!)</a></li>
+                <li><a href="https://figshare.com/articles/online_resource/Spike_sorting_pipeline_for_the_International_Brain_Laboratory/19705522?file=35040628">IBL's white paper on their spike sorting pipeline</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L3.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+
+      <div class="md:row-span-2"></div>
+      <div class="mb-2 group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">4</div>
+        
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Sorting</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul id="1plan" class="list-disc pl-6">
+            <li>Sort our recording!</li>
+            <li>Install an external sorter, and use it</li>
+            <li>Do a simple comparison of two sorters</li>
+        </ul>
+
+        <button onclick="myFunction('4resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="4resources" style="display:none;">
+            <ul class="list-disc pl-6">
+                <li><a>Jupyter notebook</a> used in the video</li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/latest/modules/sorters.html#supported-spike-sorters">List of sorters supported by spikeinterface</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L4.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+
+    <div class="row-span-2"></div>
+    <div class="mb-2 group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">5</div>
+        
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Postprocessing</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul id="1plan" class="list-disc pl-6">
+            <li>Make a sorting_analyzer</li>
+            <li>Compute lots of extensions, like waveforms, spike locations and quality metrics</li>
+            <li>Visualise these, and export a summary report</li>
+        </ul>
+
+        <button onclick="myFunction('5resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="5resources" style="display:none;">
+            <ul id="1plan" class="list-disc pl-6">
+                <li><a>Jupyter notebook</a> used in the video</li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/latest/modules/postprocessing.html#available-postprocessing-extensions">List of postprocessing extensions</a></li>
+                <li>Info about <a href="https://spikeinterface.readthedocs.io/en/latest/modules/qualitymetrics.html">quality metrics</a></li>
+                <li><a href="https://spikeinterface.readthedocs.io/en/latest/modules/widgets.html#available-plotting-functions">List of widgets (visualisations)</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L5.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+
+    <div class="row-span-2"></div>
+    <div class="mb-2 group md:row-span-2 flex justify-between border-2 rounded-lg border-gray-300 hover:border-gray-400 hover:bg-gray-100 w-96 md:w-auto mx-2 md:mx-2  grid-template-rows">
+        
+        <div class="flex">
+        <div class="w-20 text-9xl text-white text-center bg-gray-300 group-hover:bg-gray-400">6</div>
+        
+        <div class="pl-2">
+
+          <div class="text-xl font-bold">Putting it all together</div>
+
+        <div class=" font-bold" >Plan &#x2193</div>
+        <ul class="list-disc pl-6">
+            <li>Create a python script which implements everything we've learned</li>
+            <li>Run it</li>
+        </ul>
+
+        <button onclick="myFunction('6resources')" class="font-bold text-blue-600" >Resources &#x2193</button> 
+        <div id="6resources" style="display:none;">
+            <ul class="list-disc pl-6">
+                <li>The script</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="m-2 flex-none">
+        <a href="https://youtube.com">
+            <img src="img/L6.png" width="120" height="120"></img>
+            <p class="text-blue-500 text-center">Watch</p>
+        </a>
+    </div>
+
+    </div>
+
+
+</div>
+
+<div class="mx-auto text-center pb-96 pt-4">Created and maintained by Chris Halcrow, at the University of Edinburgh.</div>
+
+</body>
+
+
+
